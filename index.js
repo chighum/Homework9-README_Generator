@@ -37,8 +37,8 @@ const questions = [
   },
   {
     type: "input",
-    message: "What is the title of your project?",
-    name: "title",
+    message: "How do you test the project?",
+    name: "test",
   },
 ];
 
