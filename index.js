@@ -42,7 +42,7 @@ const questions = [
   },
 ];
 
-inquirer.prompt(questions);
+inquirer.prompt(questions).then((response) => fs.writeToFile());
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
