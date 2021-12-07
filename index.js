@@ -23,7 +23,7 @@ const questions = [
   {
     type: "input",
     message: "How do you use the project?",
-    name: "use",
+    name: "usage",
   },
   {
     type: "input",
@@ -40,11 +40,50 @@ const questions = [
     message: "How do you test the project?",
     name: "test",
   },
+  {
+    type: "input",
+    message: "What is your GitHub username?",
+    name: "github",
+  },
+  {
+    type: "input",
+    message: "What is your email?",
+    name: "email",
+  },
 ];
 
-inquirer.prompt(questions).then((response) => fs.writeToFile());
+inquirer.prompt(questions).then((response) => {
+  fs.writeFile("README.md", writeToFile(response), (err) =>
+    err ? console.error(err) : console.log("README.md Generated Successfully!")
+  );
+});
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(response) {
+  return `# ${response.title}
+  ## Description
+    ${response.description}
+  ## Table of Contents
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [License](#license)
+    * [Contributing](#contributing)
+    * [Testing](#tests)
+      * [Questions](#questions)
+  ## Installation
+    ${response.install}
+  ## Usage
+    ${response.usage}
+  ## License
+    ${response.license}
+  ## How to Contribute
+    ${response.contribute}
+  ## Tests
+    ${response.test}
+  ## Questions
+    Github Profile: https:github.com/${response.github}
+    Email: ${response.email}
+`;
+}
 
 // TODO: Create a function to initialize app
 function init() {}
