@@ -39,9 +39,6 @@ const questions = [
       "BSD_3_Clause",
       "BSD_4_Clause",
       "Boost_Software_v1.0",
-      "Creative Commons Attribution 4.0 International",
-      "Creative Commons Attribution Share Alike 4.0 International",
-      "Creative Commons Zero v1.0 Universal",
       "CeCILL_Free_Software_v2.1",
       "Educational_Community_v2.0",
       "Eclipse_Public_v2.0",
@@ -95,42 +92,43 @@ function writeToFile(response) {
   
 ## Description
 
-  ${response.description}
+${response.description}
 
 ## Table of Contents
 
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Testing](#testing)
-  - [Questions](#questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Testing](#testing)
+- [Questions](#questions)
   
 ## Installation
 
-  ${response.install}
+${response.install}
 
 ## Usage
 
-  ${response.usage}
+${response.usage}
 
-  ## License
+## License
   
-    ${response.license}
+This application is covered under the ${response.license} license.
 
-  ## Contributing
+## Contributing
 
-    ${response.contribute}
+${response.contribute}
 
-  ## Testing
+## Testing
 
-    ${response.test}
+${response.test}
 
-  ## Questions
+## Questions
 
-    If you have any questions, please feel free to contact me via Github or Email.
-    Github Profile: [https:github.com/${response.github}](https:github.com/${response.github})
-    Email: [${response.email}](${response.email})
+If you have any questions, please feel free to contact me via:
+
+- Github: [${response.github}](https://github.com/${response.github})
+- Email: [${response.email}](mailto:${response.email})
 `;
 }
 

@@ -1,42 +1,43 @@
-# Title
+# Project title
 
 ![MIT](https://img.shields.io/badge/license-MIT-blue)
-
+  
 ## Description
 
-    Description of project
+description
 
 ## Table of Contents
 
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributing](#contributing)
-    - [Testing](#testing)
-    - [Questions](#questions)
-
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Testing](#testing)
+- [Questions](#questions)
+  
 ## Installation
 
-    Installation instructions
+installation
 
 ## Usage
 
-    Usage ordinance
+usage
 
 ## License
-
-    MIT
+  
+MIT
 
 ## Contributing
 
-    Adhere to the contributing covenant
+Contributing
 
 ## Testing
 
-    Testing testing
+testing
 
 ## Questions
 
-    If you have any questions, please feel free to contact me via Github or Email.
-    Github Profile: https:github.com/chighum
-    Email: chighum41@gmail.com
+If you have any questions, please feel free to contact me via:
+
+- Github: [github](https://github.com/github)
+- Email: [email](mailto:email)
