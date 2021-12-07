@@ -91,29 +91,32 @@ inquirer.prompt(questions).then((response) => {
 function writeToFile(response) {
   return `# ${response.title}
 
+![${response.license}](https://img.shields.io/badge/license-${response.license}-blue)
+  
+## Description
+
+  ${response.description}
+
+## Table of Contents
+
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Testing](#testing)
+  - [Questions](#questions)
+  
+## Installation
+
+  ${response.install}
+
+## Usage
+
+  ${response.usage}
+
   ## License
-
-  ![${response.license}](https://img.shields.io/badge/license-${response.license}-blue)
   
-  ## Description
-
-    ${response.description}
-
-  ## Table of Contents
-
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Contributing](#contributing)
-    * [Testing](#testing)
-    * [Questions](#questions)
-  
-  ## Installation
-
-    ${response.install}
-
-  ## Usage
-
-    ${response.usage}
+    ${response.license}
 
   ## Contributing
 
@@ -126,8 +129,8 @@ function writeToFile(response) {
   ## Questions
 
     If you have any questions, please feel free to contact me via Github or Email.
-    Github Profile: https:github.com/${response.github}
-    Email: ${response.email}
+    Github Profile: [https:github.com/${response.github}](https:github.com/${response.github})
+    Email: [${response.email}](${response.email})
 `;
 }
 
