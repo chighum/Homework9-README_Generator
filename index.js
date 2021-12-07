@@ -79,7 +79,7 @@ const questions = [
 ];
 
 inquirer.prompt(questions).then((response) => {
-  fs.writeFile("README.md", writeToFile(response), (err) =>
+  fs.writeFile("Example_README.md", writeToFile(response), (err) =>
     err ? console.error(err) : console.log("README.md Generated Successfully!")
   );
 });
@@ -130,9 +130,3 @@ If you have any questions, please feel free to contact me via:
 - Email: [${response.email}](mailto:${response.email})
 `;
 }
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
