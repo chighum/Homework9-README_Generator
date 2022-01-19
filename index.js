@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
 
-// TODO: Create an array of questions for user input
+// Create an array of questions for user input
 const questions = [
   {
     type: "input",
@@ -83,7 +83,7 @@ inquirer.prompt(questions).then((response) => {
     err ? console.error(err) : console.log("README.md Generated Successfully!")
   );
 });
-// TODO: Create a function to write README file
+// Create a function to write README file
 function writeToFile(response) {
   return `# ${response.title}
 
